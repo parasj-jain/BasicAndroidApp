@@ -1,0 +1,74 @@
+<resources>
+
+    <string name="app_name">Base App</string>
+    <string name="home">Home</string>
+    <string name="recent">Recent</string>
+    <string name="music_library">Music Library</string>
+    <string name="settings">Settings</string>
+
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="rate_us">Rate us</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_search_music">Search music</string>
+    <string name="text_no_playlist_found">No playlist found</string>
+    <string name="text_no_artists_found">No artists found</string>
+    <string name="text_no_albums_found">No albums found</string>
+    <string name="text_no_songs_found">No songs found</string>
+    <string name="text_no_genres_found">No genres found</string>
+
+    <string name="text_play_next">Play next</string>
+    <string name="text_add_to_queue">Add to queue</string>
+    <string name="text_add_to_playlist">Add to playlist</string>
+    <string name="text_go_to_artist">Go to artist</string>
+    <string name="text_go_to_album">Go to album</string>
+    <string name="text_clear_queue">Clear queue</string>
+    <string name="text_save_queue">Save queue</string>
+    <string name="text_search_on_youtube">Search on YouTube</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_shuffle">Shuffle</string>
+    <string name="text_delete_playlist">Delete playlist</string>
+
+    <!-- Search related -->
+    <string name="search_in_music">In Music</string>
+    <string name="search_in_album">In Album</string>
+    <string name="search_in_artist">In Artist</string>
+    <string name="search_in_genres">In Genres</string>
+
+    <!-- common -->
+    <string name="text_favourites">Favourites</string>
+    <string name="text_most_played">Most Played</string>
+    <string name="playlist_default_name">My playlist</string>
+    <string name="liked_playlist_default_name">My Liked Songs</string>
+    <string name="most_played_song_playlist_default_name">My Most Played Songs</string>
+    <string name="text_no_recent_items">No recent items</string>
+    <string name="content_description">No description</string>
+    <string name="text_music">Music</string>
+    <string name="text_album">Album</string>
+    <string name="text_artist">Artist</string>
+    <string name="text_genres">Genres</string>
+    <string name="text_youtube_search">Youtube search</string>
+    <string name="text_all_caps_scroll_hint">ALL</string>
+    <string name="text_new_playlist">New playlist</string>
+    <string name="text_recently_played_musics">Recently Played Music</string>
+    <string name="text_recently_played_albums">Recently Played Album</string>
+    <string name="text_freq_played_musics">Frequently Played Music</string>
+    <string name="text_freq_played_albums">Frequently Played Album</string>
+    <string name="text_liked_played_musics">Liked Played Music</string>
+    <string name="text_your_playlists">Your Playlists</string>
+    <string name="text_create_playlist">Create Playlist</string>
+
+    <string name="search_result_for">Search result for %s</string>
+    <string name="search_result">Search result</string>
+    <string name="playlist_deleted_successfully">Playlist %s deleted successfully</string>
+    <string name="artist_all_my_songs">All my songs</string>
+    <string name="playlist_updated">Playlist updated</string>
+    <string name="playlist_added">Playlist added</string>
+
+    <string name="text_see_all">See all</string>
+    <string name="text_music_file_deleted">Music %s deleted</string>
+
+</resources>

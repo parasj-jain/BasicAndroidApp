@@ -1,0 +1,20 @@
+ext {
+
+    keys = [
+            'debugAlias'      : 'androiddebugkey',
+            'debugKeyPassword': 'android',
+            'debugPassword'   : 'android',
+            'storeAlias'      : 'my-key-alias'
+//            'storeKeyPassword': 'studypad',
+//            'storePassword'   : 'studypad',
+//            'enctyptionKey'   : '0F5D1AF327A330CAA171095E0AB20ECD76B9D355867F0716BB1C62A0848E3A81B6EEAE3BED067CCF5784333742719DCD'
+    ]
+
+    def build_versions = [:]
+    build_versions.min_sdk = 21
+    build_versions.target_sdk = 29
+    build_versions.build_tools = "27.0.3"
+    build_versions.version_code = 1
+    build_versions.version_name = "1.0"
+    ext.build_versions = build_versions
+}
