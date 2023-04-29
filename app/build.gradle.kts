@@ -17,18 +17,18 @@ android {
     }
 
 //    signingConfigs {
-//        configRelease {
+//        getByName("configRelease") {
 //            keyAlias = "${keys.storeAlias}"
 //            keyPassword = "${keys.storeKeyPassword}"
 //            storeFile = file('keystore/my-release-key.keystore')
 //            storePassword = "${keys.storeKeyPassword}"
 //        }
 //
-//        configDebug {
-//            keyAlias = "${keys.debugAlias}"
-//            keyPassword = "${keys.debugKeyPassword}"
+//        getByName("configDebug") {
+//            keyAlias = "androiddebugkey"
+//            keyPassword = "android"
 //            storeFile = file('keystore/my.debug.keystore')
-//            storePassword = "${keys.debugPassword}"
+//            storePassword = "android"
 //        }
 //    }
 

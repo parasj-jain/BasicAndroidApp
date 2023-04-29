@@ -2,32 +2,32 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object AppDependancies {
 
-    val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
+    private val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
 
     // Android Libraries
-    val coreKtxLib = "androidx.core:core-ktx:${Versions.coreKtx}"
-    val appCompatLib = "androidx.appcompat:appcompat:${Versions.appCompat}"
-    val constraintLayoutLib = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
-    val cardViewLib = "androidx.cardview:cardview:${Versions.cardView}"
-    val recyclerViewLib = "androidx.recyclerview:recyclerview:${Versions.recyclerView}"
+    private val coreKtxLib = "androidx.core:core-ktx:${Versions.coreKtx}"
+    private val appCompatLib = "androidx.appcompat:appcompat:${Versions.appCompat}"
+    private val constraintLayoutLib = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+    private val cardViewLib = "androidx.cardview:cardview:${Versions.cardView}"
+    private val recyclerViewLib = "androidx.recyclerview:recyclerview:${Versions.recyclerView}"
 
     // Retrofit
-    val retrofitLib = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
-    val retrofitGsonLib = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
-    val retrofitRxJava2Lib = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofitRxJava2}"
+    private val retrofitLib = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    private val retrofitGsonLib = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+    private val retrofitRxJava2Lib = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofitRxJava2}"
 
     // Gson
-    val gsonLib = "com.google.code.gson:gson:${Versions.gson}"
+    private val gsonLib = "com.google.code.gson:gson:${Versions.gson}"
 
     // Okhttp Logging
-    val okhttpLoggingLib = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttpLogging}"
+    private val okhttpLoggingLib = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttpLogging}"
 
     // Testing
-    val jUnitLib = "junit:junit:${Versions.jUnit}"
+    private val jUnitLib = "junit:junit:${Versions.jUnit}"
 
     // Android Testing
-    val jUnitExtLib = "androidx.test.ext:junit:${Versions.jUnitExt}"
-    val espressoLib = "androidx.test.espresso:espresso-core:${Versions.espresso}"
+    private val jUnitExtLib = "androidx.test.ext:junit:${Versions.jUnitExt}"
+    private val espressoLib = "androidx.test.espresso:espresso-core:${Versions.espresso}"
 
     val appLibraries = arrayListOf<String>().apply {
         add(kotlinStdLib)
