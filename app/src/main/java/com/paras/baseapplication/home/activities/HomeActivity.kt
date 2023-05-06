@@ -1,19 +1,19 @@
 package com.paras.baseapplication.home.activities
 
 import android.os.Bundle
+import androidx.activity.viewModels
+import androidx.fragment.app.FragmentActivity
 import com.paras.baseapplication.R
-import com.paras.baseapplication.base.activities.BaseActivity
-import com.paras.baseapplication.base.activities.getViewModel
 import com.paras.baseapplication.home.viewModel.HomeViewModel
 import com.paras.baseapplication.home.viewModel.IHomeViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
-class HomeActivity : BaseActivity() {
+@AndroidEntryPoint
+class HomeActivity : FragmentActivity() {
 
     // region Inject
 
-    private val mHomeViewModel: IHomeViewModel by lazy {
-        getViewModel<HomeViewModel>()
-    }
+    private val mHomeViewModel: IHomeViewModel by viewModels<HomeViewModel>()
 
     // endregion
 

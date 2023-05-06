@@ -1,14 +1,17 @@
 object Versions {
 
-    const val gradle = "3.5.4"
-    const val kotlin = "1.3.72"
+    const val gradle = "4.1.3"
+    const val kotlin = "1.8.21"
 
     // Libraries
     const val coreKtx = "1.5.0"
-    const val appCompat = "1.6.1"
+    const val fragmentKtx = "1.5.7"
+    const val activityKtx = "1.5.1"
+    const val appCompat = "1.2.0"
     const val constraintLayout = "2.1.4"
     const val cardView = "1.0.0"
-    const val recyclerView = "1.3.0"
+    const val recyclerView = "1.2.0"
+    const val hilt = "2.44"
     const val retrofit = "2.9.0"
     const val retrofitRxJava2 = "2.4.0"
     const val gson = "2.10.1"

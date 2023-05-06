@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -46,11 +48,18 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+    packagingOptions {
+        exclude("META-INF/kotlin-stdlib-jdk7.kotlin_module")
+        exclude("META-INF/kotlin-stdlib-jdk8.kotlin_module")
+        exclude("META-INF/com.android.tools/proguard/coroutines.pro")
+    }
 }
 
 dependencies {
 
     implementation(AppDependancies.appLibraries)
+    kapt(AppDependancies.kaptLibraries)
     testImplementation(AppDependancies.testLibraries)
     androidTestImplementation(AppDependancies.androidTestLibraries)
 }

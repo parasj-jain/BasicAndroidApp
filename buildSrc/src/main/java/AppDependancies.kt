@@ -2,14 +2,20 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 
 object AppDependancies {
 
-    private val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
+    private val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
 
-    // Android Libraries
+    // Android Core Libraries
     private val coreKtxLib = "androidx.core:core-ktx:${Versions.coreKtx}"
+    private val activityKtxLib = "androidx.activity:activity-ktx:${Versions.activityKtx}"
+    private val fragmentKtxLib = "androidx.fragment:fragment-ktx:${Versions.fragmentKtx}"
     private val appCompatLib = "androidx.appcompat:appcompat:${Versions.appCompat}"
     private val constraintLayoutLib = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     private val cardViewLib = "androidx.cardview:cardview:${Versions.cardView}"
     private val recyclerViewLib = "androidx.recyclerview:recyclerview:${Versions.recyclerView}"
+
+    // Hilt
+    private val hiltLib = "com.google.dagger:hilt-android:${Versions.hilt}"
+    private val hiltKaptLib = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
 
     // Retrofit
     private val retrofitLib = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
@@ -32,15 +38,22 @@ object AppDependancies {
     val appLibraries = arrayListOf<String>().apply {
         add(kotlinStdLib)
         add(coreKtxLib)
+        add(activityKtxLib)
+        add(fragmentKtxLib)
         add(appCompatLib)
         add(constraintLayoutLib)
         add(cardViewLib)
         add(recyclerViewLib)
+        add(hiltLib)
         add(retrofitLib)
         add(retrofitGsonLib)
         add(retrofitRxJava2Lib)
         add(gsonLib)
         add(okhttpLoggingLib)
+    }
+
+    val kaptLibraries = arrayListOf<String>().apply {
+        add(hiltKaptLib)
     }
 
     val androidTestLibraries = arrayListOf<String>().apply {
