@@ -1,6 +1,6 @@
 object Versions {
 
-    const val gradle = "4.1.3"
+    const val gradle = "7.4.2"
     const val kotlin = "1.8.21"
 
     // Libraries
@@ -16,6 +16,7 @@ object Versions {
     const val retrofitRxJava2 = "2.4.0"
     const val gson = "2.10.1"
     const val okhttpLogging = "5.0.0-alpha.2"
+    const val chucker = "3.5.2"
 
     // Testing
     const val jUnit = "4.13.2"

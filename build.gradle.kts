@@ -2,6 +2,7 @@
 buildscript {
     repositories {
         google()
+
         mavenCentral()
     }
     dependencies {
@@ -15,6 +16,8 @@ buildscript {
 
 plugins {
     id("com.google.dagger.hilt.android") version "2.44" apply false
+//    id("com.android.test") version "7.4.2" apply false
+    id("org.jetbrains.kotlin.android") version "1.8.0" apply false
 }
 
 allprojects {

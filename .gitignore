@@ -3,3 +3,5 @@
 /buildSrc/build/
 /buildSrc/.gradle/
 /build/
+/dbPersistance/build/
+/network/build/

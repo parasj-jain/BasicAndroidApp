@@ -28,6 +28,9 @@ object AppDependancies {
     // Okhttp Logging
     private val okhttpLoggingLib = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttpLogging}"
 
+    // Chucker
+    private val chuckerLib = "com.github.chuckerteam.chucker:library:${Versions.chucker}"
+
     // Testing
     private val jUnitLib = "junit:junit:${Versions.jUnit}"
 
@@ -44,12 +47,24 @@ object AppDependancies {
         add(constraintLayoutLib)
         add(cardViewLib)
         add(recyclerViewLib)
+    }
+
+    val networkApiLibraries = arrayListOf<String>().apply {
+        add(kotlinStdLib)
+        add(appCompatLib)
         add(hiltLib)
+    }
+
+    val networkInternalLibraries = arrayListOf<String>().apply {
         add(retrofitLib)
         add(retrofitGsonLib)
         add(retrofitRxJava2Lib)
         add(gsonLib)
         add(okhttpLoggingLib)
+    }
+
+    val networkDebugLibraries = arrayListOf<String>().apply {
+        add(chuckerLib)
     }
 
     val kaptLibraries = arrayListOf<String>().apply {
@@ -71,6 +86,18 @@ object AppDependancies {
 fun DependencyHandler.kapt(list: List<String>) {
     list.forEach { dependency ->
         add("kapt", dependency)
+    }
+}
+
+fun DependencyHandler.api(list: List<String>) {
+    list.forEach { dependency ->
+        add("api", dependency)
+    }
+}
+
+fun DependencyHandler.debugImplementation(list: List<String>) {
+    list.forEach { dependency ->
+        add("debugImplementation", dependency)
     }
 }
 

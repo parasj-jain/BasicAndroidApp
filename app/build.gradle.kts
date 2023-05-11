@@ -2,7 +2,6 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("kapt")
-    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -42,11 +41,11 @@ android {
                 "proguard-rules.pro"
             )
         }
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        create("benchmark") {
+            signingConfig = signingConfigs.getByName("debug")
+            matchingFallbacks += listOf("release")
+            isDebuggable = false
+        }
     }
 
     packagingOptions {
@@ -59,7 +58,8 @@ android {
 dependencies {
 
     implementation(AppDependancies.appLibraries)
-    kapt(AppDependancies.kaptLibraries)
+    implementation(project(":network"))
+    implementation(project(":dbPersistance"))
     testImplementation(AppDependancies.testLibraries)
     androidTestImplementation(AppDependancies.androidTestLibraries)
 }
