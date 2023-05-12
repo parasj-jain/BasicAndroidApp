@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     kotlin("android")
+    kotlin("kapt")
 }
 
 android {
@@ -12,6 +13,11 @@ android {
 
         testInstrumentationRunner = AppConfig.androidTestInstrumentation
     }
+}
+
+dependencies {
+    implementation(AppDependancies.dbPersistanceInternalLibraries)
+    kapt(AppDependancies.dbPersistanceKaptLibraries)
 }
 
 repositories {

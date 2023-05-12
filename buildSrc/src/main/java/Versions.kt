@@ -17,6 +17,7 @@ object Versions {
     const val gson = "2.10.1"
     const val okhttpLogging = "5.0.0-alpha.2"
     const val chucker = "3.5.2"
+    const val room = "2.5.1"
 
     // Testing
     const val jUnit = "4.13.2"

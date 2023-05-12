@@ -31,6 +31,10 @@ object AppDependancies {
     // Chucker
     private val chuckerLib = "com.github.chuckerteam.chucker:library:${Versions.chucker}"
 
+    // Room Database
+    private val roomRuntimeLib = "androidx.room:room-runtime:${Versions.room}"
+    private val roomCompilerLib = "androidx.room:room-compiler:${Versions.room}"
+
     // Testing
     private val jUnitLib = "junit:junit:${Versions.jUnit}"
 
@@ -61,6 +65,16 @@ object AppDependancies {
         add(retrofitRxJava2Lib)
         add(gsonLib)
         add(okhttpLoggingLib)
+    }
+
+    val dbPersistanceInternalLibraries = arrayListOf<String>().apply {
+        add(roomRuntimeLib)
+        add(hiltLib)
+    }
+
+    val dbPersistanceKaptLibraries = arrayListOf<String>().apply {
+        add(roomCompilerLib)
+        add(hiltKaptLib)
     }
 
     val networkDebugLibraries = arrayListOf<String>().apply {
