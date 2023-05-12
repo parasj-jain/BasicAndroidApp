@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -53,6 +54,10 @@ android {
         exclude("META-INF/kotlin-stdlib-jdk8.kotlin_module")
         exclude("META-INF/com.android.tools/proguard/coroutines.pro")
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -61,4 +66,5 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":network"))
     implementation(project(":dbPersistance"))
+    kapt(AppDependancies.kaptLibraries)
 }

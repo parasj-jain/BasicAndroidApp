@@ -48,12 +48,17 @@ object AppDependancies {
         add(gsonLib)
     }
 
+    val analyticsLibraries = arrayListOf<String>().apply {
+        add(hiltLib)
+    }
+
     val appLibraries = arrayListOf<String>().apply {
         add(kotlinStdLib)
         add(coreKtxLib)
         add(activityKtxLib)
         add(fragmentKtxLib)
         add(appCompatLib)
+        add(hiltLib)
         add(constraintLayoutLib)
         add(cardViewLib)
         add(recyclerViewLib)
@@ -68,15 +73,18 @@ object AppDependancies {
         add(retrofitGsonLib)
         add(retrofitRxJava2Lib)
         add(okhttpLoggingLib)
+        add(hiltLib)
     }
 
     val dbPersistanceInternalLibraries = arrayListOf<String>().apply {
         add(roomRuntimeLib)
         add(roomKtxLib)
+        add(hiltLib)
     }
 
     val dbPersistanceKaptLibraries = arrayListOf<String>().apply {
         add(roomCompilerLib)
+        add(hiltKaptLib)
     }
 
     val networkDebugLibraries = arrayListOf<String>().apply {

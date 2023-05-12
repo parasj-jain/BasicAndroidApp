@@ -28,10 +28,10 @@ android {
 
 dependencies {
 
-    implementation(project(":core"))
-    implementation(AppDependancies.networkInternalLibraries)
+    implementation(AppDependancies.analyticsLibraries)
     kapt(AppDependancies.kaptLibraries)
-    debugImplementation(AppDependancies.networkDebugLibraries)
+    testImplementation(AppDependancies.testLibraries)
+    androidTestImplementation(AppDependancies.androidTestLibraries)
 }
 
 repositories {

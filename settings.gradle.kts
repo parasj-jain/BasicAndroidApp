@@ -1,4 +1,5 @@
 include(":core")
+include(":analytics")
 include(":app")
 include(":dbPersistance")
 include(":network")
