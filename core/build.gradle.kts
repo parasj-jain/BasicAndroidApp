@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     kotlin("android")
     kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -27,9 +28,10 @@ android {
 
 dependencies {
 
-    implementation(project(":core"))
-    implementation(AppDependancies.networkInternalLibraries)
-    debugImplementation(AppDependancies.networkDebugLibraries)
+    api(AppDependancies.coreApiLibraries)
+    kapt(AppDependancies.kaptLibraries)
+    testImplementation(AppDependancies.testLibraries)
+    androidTestImplementation(AppDependancies.androidTestLibraries)
 }
 
 repositories {

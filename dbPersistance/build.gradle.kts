@@ -16,6 +16,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":core"))
     implementation(AppDependancies.dbPersistanceInternalLibraries)
     kapt(AppDependancies.dbPersistanceKaptLibraries)
 }

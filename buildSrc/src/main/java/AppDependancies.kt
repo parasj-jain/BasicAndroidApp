@@ -33,6 +33,7 @@ object AppDependancies {
 
     // Room Database
     private val roomRuntimeLib = "androidx.room:room-runtime:${Versions.room}"
+    private val roomKtxLib = "androidx.room:room-ktx:${Versions.room}"
     private val roomCompilerLib = "androidx.room:room-compiler:${Versions.room}"
 
     // Testing
@@ -41,6 +42,11 @@ object AppDependancies {
     // Android Testing
     private val jUnitExtLib = "androidx.test.ext:junit:${Versions.jUnitExt}"
     private val espressoLib = "androidx.test.espresso:espresso-core:${Versions.espresso}"
+
+    val coreApiLibraries = arrayListOf<String>().apply {
+        add(hiltLib)
+        add(gsonLib)
+    }
 
     val appLibraries = arrayListOf<String>().apply {
         add(kotlinStdLib)
@@ -53,36 +59,28 @@ object AppDependancies {
         add(recyclerViewLib)
     }
 
-    val networkApiLibraries = arrayListOf<String>().apply {
-        add(kotlinStdLib)
-        add(appCompatLib)
-        add(hiltLib)
+    val kaptLibraries = arrayListOf<String>().apply {
+        add(hiltKaptLib)
     }
 
     val networkInternalLibraries = arrayListOf<String>().apply {
         add(retrofitLib)
         add(retrofitGsonLib)
         add(retrofitRxJava2Lib)
-        add(gsonLib)
         add(okhttpLoggingLib)
     }
 
     val dbPersistanceInternalLibraries = arrayListOf<String>().apply {
         add(roomRuntimeLib)
-        add(hiltLib)
+        add(roomKtxLib)
     }
 
     val dbPersistanceKaptLibraries = arrayListOf<String>().apply {
         add(roomCompilerLib)
-        add(hiltKaptLib)
     }
 
     val networkDebugLibraries = arrayListOf<String>().apply {
         add(chuckerLib)
-    }
-
-    val kaptLibraries = arrayListOf<String>().apply {
-        add(hiltKaptLib)
     }
 
     val androidTestLibraries = arrayListOf<String>().apply {

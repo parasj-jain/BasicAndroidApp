@@ -58,8 +58,7 @@ android {
 dependencies {
 
     implementation(AppDependancies.appLibraries)
+    implementation(project(":core"))
     implementation(project(":network"))
     implementation(project(":dbPersistance"))
-    testImplementation(AppDependancies.testLibraries)
-    androidTestImplementation(AppDependancies.androidTestLibraries)
 }
